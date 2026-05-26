@@ -1,0 +1,216 @@
+/* ==========================================================================
+   1. IMPORTACIÓN DE FUENTES DESDE GOOGLE FONTS
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Open+Sans:wght@400;600&display=swap');
+
+/* ==========================================================================
+   2. ESTILOS GENERALES Y ENTORNO
+   ========================================================================== */
+body {
+  background-color: #FAF6F0; /* Fondo crudo/aireado que acompaña la estética de tu blog */
+  margin: 0;
+  padding: 0;
+}
+
+/* ==========================================================================
+   3. CONTENEDOR PRINCIPAL (REQUISITOS DE LA CONSIGNA)
+   ========================================================================== */
+.contenedor-perfil {
+  width: 80%;               /* 80% de ancho solicitado */
+  max-width: 900px;         /* Ajuste óptimo para pantallas de escritorio */
+  margin: 20px auto;        /* 20px arriba/abajo y centrado horizontal */
+  padding: 15px;            /* Padding interno de 15px solicitado */
+  background-color: #F2E6D8; /* Color de fondo beige solicitado */
+  box-sizing: border-box;   /* Evita que el padding altere el ancho final */
+  border-radius: 4px;       /* Suavizado sutil de esquinas estilo bloque de blog */
+}
+
+/* ==========================================================================
+   4. TIPOGRAFÍAS Y JERARQUÍAS VISUALES
+   ========================================================================== */
+h1 {
+  font-family: 'Lora', serif;
+  font-weight: 500;           /* Peso Medium */
+  font-size: 32px;            /* Tu ajuste personalizado de escala */
+  color: hwb(104 15% 76%);    /* Tu color personalizado verde bosque profundo */
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-family: 'Lora', serif;
+  font-weight: 500;
+  font-size: 20px;            /* Tamaño para subtítulos */
+  color: hwb(104 15% 76%);    /* Mismo color verde para mantener la identidad */
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;           /* Regular */
+  font-size: 16px;            /* Tamaño de 16px solicitado */
+  line-height: 1.5;           /* Interlineado solicitado para lectura en pantalla */
+  color: #261D12;             /* Marrón oscuro solicitado */
+  margin-bottom: 16px;
+}
+
+/* Estilos de listas */
+ul {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #261D12;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+strong {
+  font-weight: 600;           /* Resaltado elegante en Open Sans Semibold */
+}
+
+/* ==========================================================================
+   5. DISEÑO DE LA IMAGEN Y SU DESCRIPCIÓN
+   ========================================================================== */
+.imagen-portfolio {
+  margin: 25px 0;            /* Margen externo para distanciar del texto */
+  padding: 0;
+  width: 100%;               /* Toma el ancho completo de la caja beige */
+}
+
+.imagen-portfolio img {
+  width: 100%;               /* Ajuste automático al espacio disponible (responsive) */
+  height: auto;              /* Protege las proporciones originales */
+  display: block;            /* Evita espacios fantasmas debajo del archivo */
+  border-radius: 2px;        /* Remate limpio en esquinas */
+}
+
+.imagen-portfolio figcaption {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;           /* Un punto tipográfico menor para notas de pie */
+  line-height: 1.4;
+  color: #261D12;
+  margin-top: 10px;          /* Aire entre la foto y el texto del epígrafe */
+  opacity: 0.85;             /* Suavizado visual */
+}
+
+.imagen-portfolio figcaption .autoria {
+  display: block;            /* Salto de línea estructural */
+  font-style: italic;        /* Diferenciación en itálica para cumplir la atribución */
+  margin-top: 4px;
+}
+
+/* ==========================================================================
+   6. NUEVOS COMPONENTES: BOTÓN DE BEHANCE Y LINKS INTERNOS
+   ========================================================================== */
+.boton-externo {
+  display: inline-block;
+  background-color: hwb(104 15% 76%); /* Tu color verde */
+  color: #FAF6F0;                    /* Texto claro para contraste */
+  padding: 10px 22px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  border-radius: 4px;
+  margin: 5px 0 25px 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.boton-externo:hover {
+  background-color: #261D12;         /* Cambia al marrón de tu paleta al pasar el mouse */
+  color: #F2E6D8;
+}
+
+.link-interno {
+  color: hwb(104 15% 76%);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.link-interno:hover {
+  color: #261D12;
+}
+
+.enlace-volver {
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #261D12;
+  text-decoration: none;
+  margin-bottom: 20px;
+  opacity: 0.7;
+}
+
+.enlace-volver:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   7. PIE DE PÁGINA Y LICENCIA (Ajustes tipográficos y espaciados)
+   ========================================================================== */
+.pie-pagina {
+  margin-top: 40px;
+  text-align: center; /* Centra el escudo de CC y el texto para cerrar el bloque */
+}
+
+.separador-licencia {
+  border: 0;
+  border-top: 1px solid hwb(104 15% 76% / 0.2); /* Una línea sutil usando tu verde con opacidad */
+  margin-bottom: 20px;
+}
+
+.icono-cc {
+  margin-bottom: 8px;
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
+}
+
+.icono-cc:hover {
+  opacity: 1; /* Pequeño feedback visual al pasar el mouse por el logo */
+}
+
+.texto-licencia {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px; /* Más chica que el texto base (16px) para marcar jerarquía */
+  line-height: 1.4;
+  color: #261D12;
+  opacity: 0.75;
+}
+
+/* Estilo específico para el link legal */
+.link-licencia {
+  color: #261D12;
+  text-decoration: underline;
+}
+
+.link-licencia:hover {
+  color: hwb(104 15% 76%); /* Vuelve a tu verde cuando se posicionan encima */
+}
+
+.autoria-reserva {
+  display: block;
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   8. EMBEBIDO DE SPOTIFY (Ajuste de dimensiones y aire)
+   ========================================================================== */
+.contenedor-spotify {
+  width: 100%;
+  height: 152px;        /* Respetamos el alto nativo del reproductor de Spotify */
+  margin: 30px 0 15px 0; /* Espaciado correcto para que respire entre los párrafos */
+  box-shadow: 0 4px 12px rgba(38, 29, 18, 0.05); /* Sombra muy sutil que acompaña tu paleta */
+}
+
+.contenedor-spotify iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
